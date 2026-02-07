@@ -1,0 +1,20 @@
+{
+  "entryPoints": {
+    "js": ["src/js/app.js"],
+    "css": ["src/css/app.css"]
+  },
+  "staticDirs": ["src/images", "src/fonts"],
+  "outDir": "public/assets",
+  "publicPath": "/assets",
+  "devServer": {
+    "host": "127.0.0.1",
+    "port": 3002,
+    "secure": false
+  },
+  "aliases": {
+    "@js": "js",
+    "@css": "css",
+    "@images": "images",
+    "@fonts": "fonts"
+  }
+}

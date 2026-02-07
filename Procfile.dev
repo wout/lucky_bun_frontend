@@ -1,0 +1,3 @@
+system_check: crystal script/system_check.cr
+web: lucky watch --reload-browser --error-trace
+assets: bun run dev

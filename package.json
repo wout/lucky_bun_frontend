@@ -1,0 +1,13 @@
+{
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "modern-normalize": "^3.0.1"
+  },
+  "scripts": {
+    "heroku-postbuild": "bun run build",
+    "build": "bun src/bun/bake.js",
+    "dev": "bun src/bun/bake.js --dev"
+  }
+}
