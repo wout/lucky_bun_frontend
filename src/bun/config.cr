@@ -52,8 +52,8 @@ module Lucky::Bun
       end
     end
 
-    def self.load(path : String? = nil) : Config
-      Config.from_json(File.read(File.expand_path(path.presence || CONFIG_PATH)))
+    def self.load : Config
+      Config.from_json(File.read(File.expand_path(CONFIG_PATH)))
     rescue File::NotFoundError
       Config.from_json("{}")
     end

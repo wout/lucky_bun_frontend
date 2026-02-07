@@ -10,8 +10,8 @@ struct Lucky::AssetManifestBuilder
   getter manifest_path : String
   getter config : Lucky::Bun::Config
 
-  def initialize(config_path : String?)
-    @config = Lucky::Bun::Config.load(config_path)
+  def initialize
+    @config = Lucky::Bun::Config.load
     @manifest_path = resolve_manifest_path
   end
 
@@ -73,7 +73,7 @@ struct Lucky::AssetManifestBuilder
 end
 
 begin
-  Lucky::AssetManifestBuilder.new(ARGV[0]?).build_with_retry
+  Lucky::AssetManifestBuilder.new.build_with_retry
 rescue e
   puts e.message.try(&.colorize(:red))
   raise e
