@@ -7,7 +7,6 @@ require "./system_check"
 print_done
 
 notice "Installing Bun dependencies"
-# run_command "bun", "install", "--silent"
 run_command "bun", "install"
 
 print_done
