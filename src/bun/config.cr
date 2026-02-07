@@ -22,13 +22,6 @@ module Lucky::Bun
     @[JSON::Field(key: "devServer")]
     getter dev_server : DevServer = DevServer.from_json("{}")
 
-    getter aliases : Hash(String, String) = {
-      "@js"     => "src/js",
-      "@css"    => "src/css",
-      "@images" => "src/images",
-      "@fonts"  => "src/fonts",
-    }
-
     struct EntryPoints
       include JSON::Serializable
 

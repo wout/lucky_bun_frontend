@@ -10,11 +10,5 @@
     "host": "127.0.0.1",
     "port": 3002,
     "secure": false
-  },
-  "aliases": {
-    "@js": "js",
-    "@css": "css",
-    "@images": "images",
-    "@fonts": "fonts"
   }
 }
